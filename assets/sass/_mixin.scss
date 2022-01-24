@@ -1,0 +1,12 @@
+@mixin fz($size: 16) {
+	font-size: $size + px;
+	font-size: ($size / 10)  + rem;
+}
+@mixin pad($pads...){
+	padding:$pads;
+}
+@mixin media($width, $width2){
+	@media screen and (min-width: $width) and (max-width: $width2) {
+		@content;//ここにいれたcssが丸っと吐き出される
+	}
+}
