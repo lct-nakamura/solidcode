@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>SOLID CODE | Semantic HTML</title>
+	<script type="text/javascript">
+		if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+			document.write('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">');
+		} else {
+			document.write('<meta name="viewport" content="width=1200px,user-scalable=0">');
+		}
+
+	</script>
+	
+	<meta name="robots" content="noindex" />
+	<meta name="copyright" content="© SOLID CODE">
+	<link rel="stylesheet" type="text/css" media="all" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css" media="screen and (min-width: 768px)">
+	<link rel="stylesheet" href="assets/css/sp-style.css" media="screen and (max-width: 767px)">
+	<link rel="shortcut icon" href="/icon.ico">
+	<link rel="apple-touch-icon" href="/icon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-config" content="/img/favicon/browserconfig.xml" />
+	<link rel="alternate" hreflang="ja-JP" href="https://www.example.com">
+
+
+	<!-- OGP -->
+	<meta name="description" content="ディスクリプション">
+	<meta property="og:url" content="ページのURL">
+	<meta property="og:title" content="ページのタイトル">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="記事の抜粋">
+	<meta property="og:image" content="画像のURL">
+	<meta name="twitter:card" content="Summary Card">
+	<meta name="twitter:site" content="@Twitterユーザー名">
+	<meta property="og:site_name" content="サイト名">
+	<meta property="og:locale" content="ja_JP">
+	<meta property="fb:app_id" content="appIDを入力">
+	<link rel="canonical" href="">
+	<link rel="stylesheet" type="text/css" href="CSSのパス">
+	<!-- OGP END -->
+</head>
+
+<body>
+	<div id="cursor" class="pc"></div>
+	<div id="loader-bg">
+		<div id="loader">
+			<div class="fulfilling-bouncing-circle-spinner">
+				<div class="circle"></div>
+				<div class="orbit"></div>
+			</div>
+		</div>
+	</div>
+	<div id="wrapper">
+		<header id="top-head" class="header">
+			<div class="inner">
+				<h1>
+					<a href="/"><img src="assets/img/common/logo.png" alt=""></a>
+				</h1>
+				<nav class="pc">
+					<ul>
+						<li><a href="#">ホーム</a></li>
+						<li><a href="#">aaa</a></li>
+						<li><a href="#">メニュー</a></li>
+						<li><a href="#">メニュー</a></li>
+						<li><a href="#">メニュー</a></li>
+						<li><a href="contact/">お問い合わせ</a></li>
+					</ul>
+				</nav>
+				<div id="nav-toggle" class="sp">
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<nav id="global-nav" class="sp">
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">PRODUCT</a></li>
+						<li><a href="#">WORKS</a></li>
+						<li><a href="#">COMPANY</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</nav>
+				<div id="nav-bg" class="sp"></div>
+			</div>
+		</header>
+
+
+		<!-- <header class="header">
+			<div class="inner">
+				<h1>
+					<a href="/"><img src="assets/img/common/logo.png" alt=""></a>
+				</h1>
+				<nav class="pc">
+					<ul>
+						<li><a href="#">ホーム</a></li>
+						<li><a href="#">aaa</a></li>
+						<li><a href="#">メニュー</a></li>
+						<li><a href="#">メニュー</a></li>
+						<li><a href="#">メニュー</a></li>
+						<li><a href="contact/">お問い合わせ</a></li>
+					</ul>
+				</nav>
+			</div>
+			<span class="spn sp" id="gnav-open">
+				<span class="menubtnIn"><span>メニュー</span></span>
+			</span>
+			<nav class="mm-menu mm-offcanvas sp" id="gnav">
+				<ul>
+					<li><a href="/">ホーム</a></li>
+					<li><a href="#">ページ</a></li>
+					<li id="acMenu"><a class="toggle-btn" id="togglebtn">ページ(リンクなし)</a></li>
+					<div class="children">
+						<ul>
+							<li><a href="#">子ページ</a></li>
+							<li><a href="#">子ページ</a></li>
+							<li><a href="#">子ページ</a></li>
+							<li><a href="#">子ページ</a></li>
+						</ul>
+					</div>
+					<li><a href="/region/">ページ(リンクあり)</a>
+						<ul class="mainnav-sub">
+							<li><a href="#">子ページ</a></li>
+							<li><a href="#">子ページ</a></li>
+							<li><a href="#">子ページ</a></li>
+							<li><a href="#">子ページ</a></li>
+						</ul>
+					</li>
+					<li><a href="/contact/">お問い合わせ</a></li>
+					<li><a href="/privacy/">プライバシーポリシー</a></li>
+					<li><a href="/sitemap/">サイトマップ</a></li>
+				</ul>
+			</nav>
+		</header> -->
+		<main>
+		<article>
+			<div class="main-image"><img src="assets/img/top/main.png" class="pc" alt="メイン画像"><img src="assets/img/top/main-sp.png" class="sp" alt="メイン画像"></div>
+			<div class="main-contents">
+				<div class="intro">
+					<div class="txt">
+						<p class="title">私たちは地域の皆さんの<br>暮らしをサポートいたします</p>
+						<p>私たちは、「整骨院・鍼灸院」「エステティック」「保育」「飲食」「フィットネス」「デイサービス」の事業から成り立っております。<br>これからも地域密着型のサービスとして、人と人のつながりを大切に、スタッフ一同努めてまいります。</p>
+						<ol>
+							<li>テスト</li>
+							<li>テスト</li>
+							<li>テスト</li>
+							<li>テスト</li>
+						</ol>
+					</div>
+					<div class="image"><img src="assets/img/top/molecule.png"></div>
+				</div>
+				<section class="top-business fadein">
+					<!--  class名にfadeinを入れるだけで使える -->
+					<h3>事業一覧<br><span>business</span></h3>
+					<h4>整骨院・鍼灸院事業</h4>
+					<div class="box-wrap pc">
+						<a href="#">
+							<div class="box">
+								<p class="title">南区野間</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">東区千早</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">博多区東光寺町</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">博多区東月隈</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">博多区博多駅前</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">中央区渡辺通</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">東区箱崎</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">福津市日蒔野</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">東区千早</p>
+								<p class="col2"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります<br>店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">早良区重留</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">筑紫野市美しが丘南</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">早良区野芥</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+					</div>
+					<div class="box-wrap sp">
+						<a href="#">
+							<div class="box">
+								<p class="title">南区野間</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">東区千早</p>
+								<p class="col2"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります<br>店舗名が入ります</p>
+							</div>
+						</a>
+					</div>
+					<div class="box-wrap sp">
+						<a href="#">
+							<div class="box">
+								<p class="title">博多区東光寺町</p>
+								<p class="col2"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります<br>店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">博多区東月隈</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+					</div>
+					<div class="box-wrap sp">
+						<a href="#">
+							<div class="box">
+								<p class="title">博多区博多駅前</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">中央区渡辺通</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+					</div>
+					<div class="box-wrap sp">
+						<a href="#">
+							<div class="box">
+								<p class="title">東区箱崎</p>
+								<p class="col2"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります<br>店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">福津市日蒔野</p>
+								<p class="col2"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります<br>店舗名が入ります</p>
+							</div>
+						</a>
+					</div>
+					<div class="box-wrap sp">
+						<a href="#">
+							<div class="box">
+								<p class="title">東区千早</p>
+								<p class="col2"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります<br>店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">早良区重留</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+					</div>
+					<div class="box-wrap sp">
+						<a href="#">
+							<div class="box">
+								<p class="title">筑紫野市美しが丘南</p>
+								<p class="col2"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります<br>店舗名が入ります</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="box">
+								<p class="title">早良区野芥</p>
+								<p class="col1"><img src="assets/img/common/icon-arrow.png" alt="" class="arrow">店舗名が入ります</p>
+							</div>
+						</a>
+					</div>
+					<div class="box-wrap">
+						<div class="wrap-half">
+							<h4>エステティック事業</h4>
+							<div class="wrap-inner">
+								<a href="#">
+									<div class="box">
+										<p class="title">中央区渡辺通</p>
+										<p class="col1"><img src="assets/img/common/icon-arrow2.png" alt="" class="arrow">店舗名が入ります</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="box">
+										<p class="title">博多区博多駅前</p>
+										<p class="col1"><img src="assets/img/common/icon-arrow2.png" alt="" class="arrow">店舗名が入ります</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="wrap-half">
+							<h4>保育事業</h4>
+							<div class="wrap-inner">
+								<a href="#">
+									<div class="box">
+										<p class="title">東区箱崎</p>
+										<p class="col1"><img src="assets/img/common/icon-arrow3.png" alt="" class="arrow">店舗名が入ります</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="box">
+										<p class="title">早良区重留</p>
+										<p class="col1"><img src="assets/img/common/icon-arrow3.png" alt="" class="arrow">店舗名が入ります</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="box">
+										<p class="title">東区箱崎</p>
+										<p class="col2"><img src="assets/img/common/icon-arrow3.png" alt="" class="arrow">店舗名が入ります<br>店舗名が入ります</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="wrap-half">
+							<h4>デイサービス事業</h4>
+							<div class="wrap-inner">
+								<a href="#">
+									<div class="box">
+										<p class="title">早良区野芥</p>
+										<p class="col1"><img src="assets/img/common/icon-arrow4.png" alt="" class="arrow">店舗名が入ります</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="box">
+										<p class="title">西区千里</p>
+										<p class="col1"><img src="assets/img/common/icon-arrow4.png" alt="" class="arrow">店舗名が入ります</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="wrap-half">
+							<h4>飲食事業</h4>
+							<div class="wrap-inner">
+								<a href="#">
+									<div class="box">
+										<p class="title">博多区祇園町</p>
+										<p class="col2"><img src="assets/img/common/icon-arrow4.png" alt="" class="arrow">店舗名が入ります<br>店舗名が入ります</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="wrap-half">
+							<h4>フィットネス事業</h4>
+							<div class="wrap-inner">
+								<a href="#">
+									<div class="box">
+										<p class="title">早良区野芥</p>
+										<p class="col1"><img src="assets/img/common/icon-arrow5.png" alt="" class="arrow">店舗名が入ります</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="top-voice fadein">
+					<h3>利用者様の声<br><span>voice</span></h3>
+					<div class="inner">
+						<article class="box">
+							<div class="image">
+								<a href="#"><img src="assets/img/top/top-voice01.jpg" alt=""></a>
+							</div>
+							<p class="title"> <a href="#">タイトルが入ります</a></p>
+							<p>詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。</p>
+						</article>
+						<article class="box">
+							<div class="image">
+								<a href="#"><img src="assets/img/top/top-voice02.jpg" alt=""></a>
+							</div>
+							<p class="title"> <a href="#">タイトルが入ります</a></p>
+							<p>詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。</p>
+						</article>
+						<article class="box">
+							<div class="image">
+								<a href="#"><img src="assets/img/top/top-voice03.jpg" alt=""></a>
+							</div>
+							<p class="title"> <a href="#">タイトルが入りますタイトルが入りますタイトルが入ります</a></p>
+							<p>詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。詳細が入ります。</p>
+						</article>
+					</div>
+				</section>
+				<section class="top-news">
+					<h3>お知らせ<br><span>news</span></h3>
+					<div class="inner">
+						<article>
+							<dl>
+								<dt>2018.09.21　　　</dt>
+								<dd><a href="#">最新情報が入ります。最新情報が入ります。最新情報が入ります。最新情報が入ります。</a></dd>
+							</dl>
+						</article>
+						<article>
+							<dl>
+								<dt>2018.07.04</dt>
+								<dd><a href="#">最新情報が入ります。最新情報が入ります。</a></dd>
+							</dl>
+						</article>
+						<article>
+							<dl>
+								<dt>2018.06.30</dt>
+								<dd><a href="#">最新情報が入ります。最新情報が入ります。最新情報が入ります。</a></dd>
+							</dl>
+						</article>
+						<article>
+							<dl class="pc">
+								<dt>2018.06.05</dt>
+								<dd><a href="#">最新情報が入ります。最新情報が入ります。最新情報が入ります。最新情報が入ります。</a></dd>
+							</dl>
+						</article>
+						<article>
+							<dl class="pc">
+								<dt>2018.05.10</dt>
+								<dd><a href="#">最新情報が入ります。最新情報が入ります。</a></dd>
+							</dl>
+						</article>
+					</div>
+					<div class="for-archive"> <a href="/news/">MORE</a></div>
+				</section>
+			</div>
+			<!-- main-contents END -->
+			</article>
+		</main>
+		<footer>
+			<div class="f-nav pc">
+				<ul>
+					<li><a href="a">ホーム</a></li>
+					<li><a href="a">事業案内</a></li>
+					<li><a href="a">採用情報</a></li>
+					<li><a href="a">会社案内</a></li>
+					<li><a href="a">利用者様の声</a></li>
+					<li><a href="a">お知らせ</a></li>
+					<li><a href="a">お問い合わせ</a></li>
+				</ul>
+			</div>
+			<div class="inner">
+				<div class="f-link">
+					<ul class="pc">
+						<li><a href="#">プライバシーポリシー</a></li>
+						<li><a href="#">サイトマップ</a></li>
+					</ul>
+					<small>©2020 ○○○ Group</small>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- #wrapper END -->
+	<div id="page_top" class="pc">
+		<a href="#top">top</a>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var h = $(window).height();
+			$('#wrapper').css('display', 'none');
+			$('#loader-bg ,#loader').height(h).css('display', 'block');
+		});
+
+		$(window).load(function() { //全ての読み込みが完了したら実行
+			$('#loader-bg').delay(900).fadeOut(800);
+			$('#loader').delay(600).fadeOut(300);
+			$('#wrapper').css('display', 'block');
+		});
+
+	</script>
+	<!-- スクロールして要素が範囲に入ったら表示 -->
+	<script>
+		$(function() {
+			$(window).scroll(function() {
+				$('.fadein').each(function() {
+					var position = $(this).offset().top;
+					var scroll = $(window).scrollTop();
+					var windowHeight = $(window).height();
+					if (scroll > position - windowHeight + 200) {
+						$(this).addClass('active');
+					}
+				});
+			});
+		});
+
+	</script>
+
+
+
+
+	<script src="assets/js/page-top.js"></script>
+	<script src="assets/js/min/smooth-scroll.min.js"></script>
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]');
+
+	</script>
+	<script>
+$('#nav-toggle').click(function(){
+  $('body').toggleClass('open');
+});
+	</script>
+	<script>
+		$(function(){
+  
+  //カーソル要素の指定
+  var cursor=$("#cursor");
+  
+  //mousemoveイベントでカーソル要素を移動させる
+  $(document).on("mousemove",function(e){
+               //カーソルの座標位置を取得
+    var x=e.clientX;
+    var y=e.clientY;
+    //カーソル要素のcssを書き換える用
+    cursor.css({
+      "opacity":"1",
+      "top":y+"px",
+      "left":x+"px"
+    });
+  });
+	$("a").on({
+    "mouseenter": function() {
+      //activeクラス付与
+      cursor.addClass("active");
+      stalker.addClass("active");
+    },
+    "mouseleave": function() {
+      cursor.removeClass("active");
+      stalker.removeClass("active");
+      
+    }
+  });
+});
+	</script>
+
+</body>
+
+</html>
