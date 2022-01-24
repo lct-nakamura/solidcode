@@ -92,7 +92,7 @@ a {
 }
 #cursor{
   position: fixed;
-  background: #556e51;
+  background: $brown;
   border-radius:5px;
   width: 10px;
   height: 10px;
@@ -291,29 +291,29 @@ img {
 	background: #fff;
 
 	.inner {
-		padding: 15px 120px;
+		padding: 15px 1%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 
 		h1 {
-			width: 243px;
+			width: 200px;
 		}
-		nav{
-			ul{
-			display: flex;
-			li{
-				list-style-type: none;
-				a{
-					display: inline-block;
-					padding: 12px 24px;
-					font-size: 14px;
-					text-decoration: none;
-				}
-			}
-			}
+		// nav{
+		// 	ul{
+		// 	display: flex;
+		// 	li{
+		// 		list-style-type: none;
+		// 		a{
+		// 			display: inline-block;
+		// 			padding: 12px 24px;
+		// 			font-size: 14px;
+		// 			text-decoration: none;
+		// 		}
+		// 	}
+		// 	}
 
-		}
+		// }
 	
 
 
@@ -503,13 +503,15 @@ img {
 
 
 .main-image {
-	width: 100%;
-	height: calc(100vh - 80px);
+	width: 99%;
+	margin-left: 1%;
+	height: calc(100vh - 65px);
 	min-height: 860px;
 	background-image: url(../img/top/main-bg.jpg);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-radius: 0 0 0 100px;
 	.main-txt{
 		width: 1024px;
 		background-color: rgba(255,255,255,0.8);
@@ -517,29 +519,34 @@ img {
 		position: relative;
 		z-index: 99;
 		p{
-			@include fz(20);
+			@include fz(16);
 			&.about-sc{
-				@include fz(34);
+				@include fz(46);
 				font-weight: bold;
 				color:$brown;
 				font-weight: 400;
 				padding-bottom: 30px;
 				border-bottom: 2px solid #333;
-				margin-bottom:30px;
+				margin-bottom:24px;
 				line-height: 1;
 			}
 			&.intro{
-				@include fz(30);
+				@include fz(28);
 				line-height:1.4;
-				font-weight: 700;
+				font-weight: bold;
+				span{
+					letter-spacing: 0.05em;
+					margin-right: 3px;
+					@include fz(30);
+				}
 			}
 			&.title{
-				@include fz(24);
+				@include fz(20);
 				margin-top: 24px;
 				font-weight: bold;
 			}
 			&.txt{
-				text-indent: 1.5em;
+				text-indent: 1.7em;
 			}
 			}
 			a{
@@ -554,8 +561,8 @@ img {
 				text-align: center;
 				text-decoration: none;
 				position: absolute;
-				right: 0;
-				bottom: -120px;
+				right: 20px;
+				bottom: -40px;
 				z-index: 100;
 				
 				p{
