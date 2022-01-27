@@ -583,8 +583,8 @@ img {
 }
 
 .main-image {
-  width: 99%;
-  margin-left: 1%;
+  width: 98%;
+  margin-left: 2%;
   height: calc(100vh - 65px);
   min-height: 860px;
   background-image: url(../img/top/main-bg.jpg);
@@ -598,19 +598,89 @@ img {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 0 0 0 100px;
+  overflow: hidden;
+  -webkit-animation: mainslide 10s ease 1 normal backwards;
+          animation: mainslide 10s ease 1 normal backwards;
+}
+
+@-webkit-keyframes mainslide {
+  from {
+    background-position: right top;
+  }
+  to {
+    background-position: left top;
+  }
+}
+
+@keyframes mainslide {
+  from {
+    background-position: right top;
+  }
+  to {
+    background-position: left top;
+  }
 }
 
 .main-image .main-txt {
   width: 1024px;
+  height: 482px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 60px;
   position: relative;
   z-index: 99;
+  -webkit-animation: fadeIn 2s ease 2s 1 normal backwards;
+          animation: fadeIn 2s ease 2s 1 normal backwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .main-image .main-txt p {
   font-size: 16px;
   font-size: 1.6rem;
+  -webkit-animation: txtfadeIn 2s ease 4s 1 normal backwards;
+          animation: txtfadeIn 2s ease 4s 1 normal backwards;
+}
+
+@-webkit-keyframes txtfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes txtfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .main-image .main-txt p.about-sc {
@@ -671,6 +741,26 @@ img {
   right: 20px;
   bottom: -40px;
   z-index: 100;
+  -webkit-animation: contactfadeIn 2s ease 6s 1 normal backwards;
+          animation: contactfadeIn 2s ease 6s 1 normal backwards;
+}
+
+@-webkit-keyframes contactfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contactfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .main-image .main-txt a p {
@@ -685,11 +775,25 @@ img {
   font-size: 3.3rem;
   font-weight: bold;
   font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .main-image .main-txt a p span.big {
   font-size: 28px;
   font-size: 2.8rem;
+}
+
+.main-image .main-txt a:hover span.outfit {
+  letter-spacing: 0.15em;
+}
+
+.main-image .copyright {
+  position: absolute;
+  top: 50%;
+  left: -18px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .top-business {
