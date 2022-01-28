@@ -504,20 +504,26 @@ img {
 
 .main-image {
 	width: 98%;
+	position: relative;
 	margin-left: 2%;
 	height: calc(100vh - 65px);
-	min-height: 860px;
-	background-image: url(../img/top/main-bg.jpg);
+	min-height: 699px;
+	background-image: url(../img/top/main-bg-dark.jpg);
 	
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 0 0 0 100px;
+	// background-color:rgba(255,255,255,0.2);
+	// background-blend-mode:lighten;	
 	overflow: hidden;
-	animation: mainslide 10s ease 1 normal backwards;
+	z-index: 90;
+	animation: mainslide 7s ease normal backwards;
 	@keyframes mainslide {
 		from {
 			background-position: right top;
+		
 		}
 		to {
 			background-position: left top;
@@ -527,24 +533,26 @@ img {
 	.main-txt{
 		width: 1024px;
 		height: 482px;	
-		background-color: rgba(255,255,255,0.8);
+		// background-color: rgba(255,255,255,0.8);
+		background-color: #fff;
 		padding: 60px;
 		position: relative;
 		z-index: 99;
-		animation: fadeIn 2s ease 2s 1 normal backwards; 
+		animation: fadeIn 2s ease 1 normal; 
+		
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateX(200px);
   }
   to {
-    opacity: 1;		
+    opacity: 1;	
     transform: translateX(0);
   }
 }
 		p{
 			@include fz(16);
-			animation: txtfadeIn 2s ease 4s 1 normal backwards;
+			animation: txtfadeIn 2s ease 2s 1 normal backwards;
 			@keyframes txtfadeIn {
 				from {
 					opacity: 0;
@@ -599,7 +607,7 @@ img {
 				right: 20px;
 				bottom: -40px;
 				z-index: 100;
-				animation: contactfadeIn 2s ease 6s 1 normal backwards;
+				animation: contactfadeIn 2s ease 4s 1 normal backwards;
 				@keyframes contactfadeIn {
 					from {
 						opacity: 0;
@@ -633,12 +641,14 @@ img {
 			}
 
 	}
-	.copyright{
-		position: absolute;
-		top: 50%;
-		left:-18px;
-		transform: rotate(90deg);
-	}
+	
+}
+.copyright{
+	position: absolute;
+	top: 50vh;
+	left:-18px;
+	transform: rotate(90deg);
+	z-index: 900;
 }
 
 .top-business {

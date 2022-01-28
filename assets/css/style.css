@@ -584,10 +584,11 @@ img {
 
 .main-image {
   width: 98%;
+  position: relative;
   margin-left: 2%;
   height: calc(100vh - 65px);
-  min-height: 860px;
-  background-image: url(../img/top/main-bg.jpg);
+  min-height: 699px;
+  background-image: url(../img/top/main-bg-dark.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,8 +600,9 @@ img {
           align-items: center;
   border-radius: 0 0 0 100px;
   overflow: hidden;
-  -webkit-animation: mainslide 10s ease 1 normal backwards;
-          animation: mainslide 10s ease 1 normal backwards;
+  z-index: 90;
+  -webkit-animation: mainslide 7s ease normal backwards;
+          animation: mainslide 7s ease normal backwards;
 }
 
 @-webkit-keyframes mainslide {
@@ -624,12 +626,12 @@ img {
 .main-image .main-txt {
   width: 1024px;
   height: 482px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
   padding: 60px;
   position: relative;
   z-index: 99;
-  -webkit-animation: fadeIn 2s ease 2s 1 normal backwards;
-          animation: fadeIn 2s ease 2s 1 normal backwards;
+  -webkit-animation: fadeIn 2s ease 1 normal;
+          animation: fadeIn 2s ease 1 normal;
 }
 
 @-webkit-keyframes fadeIn {
@@ -661,8 +663,8 @@ img {
 .main-image .main-txt p {
   font-size: 16px;
   font-size: 1.6rem;
-  -webkit-animation: txtfadeIn 2s ease 4s 1 normal backwards;
-          animation: txtfadeIn 2s ease 4s 1 normal backwards;
+  -webkit-animation: txtfadeIn 2s ease 2s 1 normal backwards;
+          animation: txtfadeIn 2s ease 2s 1 normal backwards;
 }
 
 @-webkit-keyframes txtfadeIn {
@@ -741,8 +743,8 @@ img {
   right: 20px;
   bottom: -40px;
   z-index: 100;
-  -webkit-animation: contactfadeIn 2s ease 6s 1 normal backwards;
-          animation: contactfadeIn 2s ease 6s 1 normal backwards;
+  -webkit-animation: contactfadeIn 2s ease 4s 1 normal backwards;
+          animation: contactfadeIn 2s ease 4s 1 normal backwards;
 }
 
 @-webkit-keyframes contactfadeIn {
@@ -788,12 +790,13 @@ img {
   letter-spacing: 0.15em;
 }
 
-.main-image .copyright {
+.copyright {
   position: absolute;
-  top: 50%;
+  top: 50vh;
   left: -18px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  z-index: 900;
 }
 
 .top-business {
